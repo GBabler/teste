@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Play Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f0f1a;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: #1a1a2e;
+            border-radius: 16px;
+            padding: 35px;
+            max-width: 600px;
+            width: 100%;
+            border: 1px solid #2a2a4a;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 6px;
+        }
+        .sub {
+            color: #8888aa;
+            text-align: center;
+            font-size: 13px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #2a2a4a;
+            padding-bottom: 18px;
+        }
+        .link-box {
+            background: #14142a;
+            border-radius: 10px;
+            padding: 14px 18px;
+            margin-bottom: 10px;
+            border-left: 3px solid #44dd88;
+        }
+        .link-box.blue {
+            border-left-color: #4488dd;
+        }
+        .link-box.pink {
+            border-left-color: #dd44aa;
+        }
+        .link-box.purple {
+            border-left-color: #aa66dd;
+        }
+        .link-box.orange {
+            border-left-color: #dd8833;
+        }
+        .link-box.green {
+            border-left-color: #33dd99;
+        }
+        .label {
+            color: #8888aa;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        a {
+            display: block;
+            color: #66ffdd;
+            font-size: 13px;
+            word-break: break-all;
+            text-decoration: none;
+            margin-top: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .desc {
+            color: #9999bb;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+        .tag {
+            display: inline-block;
+            background: #1a3a2a;
+            color: #44dd88;
+            font-size: 10px;
+            padding: 2px 10px;
+            border-radius: 12px;
+            margin-top: 5px;
+        }
+        .tag.yellow {
+            background: #3a3a1a;
+            color: #ddbb44;
+        }
+        .tag.red {
+            background: #3a1a1a;
+            color: #dd4444;
+        }
+        .hr {
+            border: none;
+            border-top: 1px solid #2a2a4a;
+            margin: 18px 0;
+        }
+        .footer {
+            text-align: center;
+            color: #555577;
+            font-size: 11px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📱 Play Store Links</h1>
+    <div class="sub">Links diretos — HTML puro, sem JavaScript</div>
+
+    <!-- Página inicial -->
+    <div class="link-box">
+        <div class="label">🏠 Página inicial</div>
+        <a href="https://play.google.com/store" target="_blank">https://play.google.com/store</a>
+        <div class="desc">Abre a versão web da Play Store</div>
+        <span class="tag yellow">⚠️ Funciona com JS desativado</span>
+    </div>
+
+    <!-- Google Play Services -->
+    <div class="link-box blue">
+        <div class="label">⚙️ Google Play Services</div>
+        <a href="https://play.google.com/store/apps/details?id=com.google.android.gms" target="_blank">https://play.google.com/store/apps/details?id=com.google.android.gms</a>
+        <div class="desc">Página oficial do app Google Play Services</div>
+        <span class="tag">✅ Funciona sem JS</span>
+    </div>
+
+    <!-- Deep link market:// -->
+    <div class="link-box pink">
+        <div class="label">📲 Abrir app nativo (market://)</div>
+        <a href="market://details?id=com.google.android.gms">market://details?id=com.google.android.gms</a>
+        <div class="desc">Tenta abrir a Play Store diretamente no app</div>
+        <span class="tag red">⚠️ Pode não funcionar em ambiente restrito</span>
+    </div>
+
+    <!-- Pesquisa -->
+    <div class="link-box purple">
+        <div class="label">🔍 Pesquisar na loja</div>
+        <a href="https://play.google.com/store/search?q=chrome" target="_blank">https://play.google.com/store/search?q=chrome</a>
+        <div class="desc">Pesquisa por "chrome" (troque na URL)</div>
+        <span class="tag yellow">⚠️ Pode precisar de JS</span>
+    </div>
+
+    <hr class="hr">
+
+    <!-- Galaxy Store -->
+    <div class="link-box orange">
+        <div class="label">📦 Galaxy Store (Samsung)</div>
+        <a href="https://galaxystore.samsung.com" target="_blank">https://galaxystore.samsung.com</a>
+        <div class="desc">Loja oficial da Samsung — pode ser mais acessível</div>
+        <span class="tag">✅ Alternativa</span>
+    </div>
+
+    <!-- APKMirror -->
+    <div class="link-box green">
+        <div class="label">📥 APKMirror</div>
+        <a href="https://apkmirror.com" target="_blank">https://apkmirror.com</a>
+        <div class="desc">Site para download de APKs confiáveis</div>
+        <span class="tag yellow">⚠️ Use com cuidado</span>
+    </div>
+
+    <div class="footer">
+        Links para estudo — não utilize para contornar mecanismos de segurança
+    </div>
+
+</div>
+
+</body>
+</html>
